@@ -27,18 +27,17 @@
         <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Source Sans Pro:300,400" />
         <!-- JS -->
         <script type="text/javascript" src="assets/js/jquery.min.js" type="text/javascript"></script>
-        <script src="http://www.w3schools.com/lib/w3data.js"></script>
     </head>
     <script>
-      //$(function(){
-      //  $("#container_header").load("social_header.html"); 
-      //  $("#container_hornav").load("header.html"); 
-      //});
+      $(function(){
+        $("#container_header").load("social_header.html"); 
+        $("#container_hornav").load("header.html"); 
+      });
     </script>
     <body>
         <div id="body_bg">
-            <div id="container_header" class="container" w3-include-html="social_header.html">
-            <!--#include file="social_header.html" -->
+            <div id="container_header" class="container">
+            
             </div>
             <div class="primary-container-group">
                 <!-- Background -->
@@ -48,7 +47,7 @@
                 </div>
                 <!--End Background -->
                 <div class="primary-container">
-                    <div id="container_hornav" class="container no-padding" w3-include-html="header.html">
+                    <div id="container_hornav" class="container no-padding">
 
                     </div>
                     <div class="container no-padding">
@@ -387,6 +386,3 @@
     </body>
 </html>
 <!-- === END FOOTER === -->
-<script>
-w3IncludeHTML();
-</script>
