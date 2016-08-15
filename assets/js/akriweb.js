@@ -72,26 +72,15 @@
 //VARIABLE ZONE
   var lang="fr";
   var dico={
-  Home:{
-    en:"Home",
-    fr:"Accueil"
-  },
-  Akriweb:{
-    en:"AkriWeb - Akrimion official website",
-    fr:"AkriWeb - site officiel d'Akrimion"
-  }
-};
-  /*  var tempdico="";
-    var client = new XMLHttpRequest();
-    client.open('GET', 'assets/json/strings.json');
-    client.onreadystatechange = function() {
-      tempdico=client.responseText;
-      try{
-      dico=JSON.parse(tempdico);
-      }catch(err){}
-      console.log(dico)
+    Home:{
+      en:"Home",
+      fr:"Accueil"
+    },
+    Akriweb:{
+      en:"AkriWeb - Akrimion official website",
+      fr:"AkriWeb - site officiel d'Akrimion"
     }
-    client.send();*/
+  };
     
 
 
