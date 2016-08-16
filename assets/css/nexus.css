@@ -1924,86 +1924,86 @@ i.fa.center {
 /*-----------------------------------------------------------------------------------*/
 /* Social Icons */
 /*-----------------------------------------------------------------------------------*/
-ul.social-icons {
+ul.social-ak-icons {
   list-style: none;
   margin: 0 0 0px 0;
 }
-ul.social-icons.circle a {
+ul.social-ak-icons.circle a {
   border-radius: 50% !important;
 }
-ul.social-icons.rounded a {
+ul.social-ak-icons.rounded a {
   border-radius: 5px !important;
 }
-ul.social-icons.color .social-facebook a {
+ul.social-ak-icons.color .social-facebook a {
   background-color: #3b5998;
 }
-ul.social-icons.color .social-twitter a {
+ul.social-ak-icons.color .social-twitter a {
   background-color: #48c4d2;
 }
-ul.social-icons.color .social-googleplus a {
+ul.social-ak-icons.color .social-googleplus a {
   background-color: #d94a39;
 }
-ul.social-icons.color .social-youtube a {
+ul.social-ak-icons.color .social-youtube a {
   background-color: #f45750;
 }
-ul.social-icons.color .social-github a {
+ul.social-ak-icons.color .social-github a {
   background-color: #333333;
 }
-ul.social-icons.color .social-pinterest a {
+ul.social-ak-icons.color .social-pinterest a {
   background-color: #cb2027;
 }
-ul.social-icons.color .social-blogger a {
+ul.social-ak-icons.color .social-blogger a {
   background-color: #fb913f;
 }
-ul.social-icons.color .social-dribbble a {
+ul.social-ak-icons.color .social-dribbble a {
   background-color: #ef5b92;
 }
-ul.social-icons.color .social-flickr a {
+ul.social-ak-icons.color .social-flickr a {
   background-color: #fd55ad;
 }
-ul.social-icons.color .social-skype a {
+ul.social-ak-icons.color .social-skype a {
   background-color: #18b7f1;
 }
-ul.social-icons.color .social-digg a {
+ul.social-ak-icons.color .social-digg a {
   background-color: #2882c6;
 }
-ul.social-icons.color .social-linkedin a {
+ul.social-ak-icons.color .social-linkedin a {
   background-color: #71b2d0;
 }
-ul.social-icons.color .social-vimeo a {
+ul.social-ak-icons.color .social-vimeo a {
   background-color: #62a0ad;
 }
-ul.social-icons.color .social-yahoo a {
+ul.social-ak-icons.color .social-yahoo a {
   background-color: #ab64bc;
 }
-ul.social-icons.color .social-tumblr a {
+ul.social-ak-icons.color .social-tumblr a {
   background-color: #3a5976;
 }
-ul.social-icons.color .social-deviantart a {
+ul.social-ak-icons.color .social-deviantart a {
   background-color: #d0de21;
 }
-ul.social-icons.color .social-delicious a {
+ul.social-ak-icons.color .social-delicious a {
   background-color: #3274d1;
 }
-ul.social-icons.color .social-rss a {
+ul.social-ak-icons.color .social-rss a {
   background-color: #fe9900;
 }
-ul.social-icons.border li a {
+ul.social-ak-icons.border li a {
   background-position: -2px -2px;
   border: 2px solid #888;
   background-color: transparent !important;
 }
-ul.social-icons.border li a:hover {
+ul.social-ak-icons.border li a:hover {
   background-position: -2px -42px !important;
   background-color: #999 !important;
 }
-ul.social-icons li {
+ul.social-ak-icons li {
   display: block;
   float: left;
   margin: 0;
   padding: 0 0 0px 0;
 }
-ul.social-icons li a {
+ul.social-ak-icons li a {
   /*border-radius: 50px;*/
   margin: 5px;
   display: block;
@@ -2015,7 +2015,7 @@ ul.social-icons li a {
   padding-bottom: 1px;
   opacity: 1;
 }
-ul.social-icons li a:hover {
+ul.social-ak-icons li a:hover {
   background-position: 0px -40px !important;
   opacity: 1;
   -webkit-transition-duration: 0.3s;
