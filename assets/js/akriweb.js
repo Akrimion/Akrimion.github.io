@@ -140,7 +140,11 @@ $(document).ready(function() {
 
 
   //Lang zone
-    $(".langchanger").on('click',setCookie('AKlang',$(this).data("lang"),7));
+    $(".langchanger").on('click',function(e){
+      console.log("button");
+      $(this).closest('ul').hide();
+      setCookie('AKlang',$(this).data("lang"),7);
+    });
 
  // translator.lang("en");//change to english
   changelang(lang);
