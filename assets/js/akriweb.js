@@ -133,6 +133,8 @@
   function _changelang(lang){
     $("#langchanger_btn").html('Lang: '+lang);
     setCookie("AKlang",lang,7);
+    translatorhead.lang(lang);
+    translator.lang(lang);
   }
 //FUNCTION END
 
@@ -149,7 +151,7 @@ $(document).ready(function() {
 
 
   //Lang zone
-    $("#langchanger_btn").on('mouseover',function(e){
+    $("#langchanger_btn").on('click',function(e){
       console.log("button");
       changeLang();
     });
