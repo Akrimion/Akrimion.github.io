@@ -131,6 +131,7 @@
     }
   }
   function _changelang(lang){
+    console.log(lang);
     $("#langchanger_btn").html('Lang: '+lang);
     setCookie("AKlang",lang,7);
     translatorhead.lang(lang);
@@ -142,7 +143,6 @@ $(document).ready(function() {
 
   //Cookies Zone
     if(getCookie("AKlang")!=""){
-      console.log("testcookies")
       lang=getCookie("AKlang");
     }else{
       lang="fr";
@@ -152,7 +152,6 @@ $(document).ready(function() {
 
   //Lang zone
     $("#langchanger_btn").on('click',function(e){
-      console.log("button");
       changeLang();
     });
 
