@@ -117,13 +117,22 @@
     if(getCookie("AKlang")!=""){
       return getCookie('AKlang');
     }else{
-      return "en";
+      return "null";
     }
   }
-  function changelang(_obj_){
-    console.log(_obj_);
-    $("#langchanger_btn").html('Lang: '+_obj_);
-    setCookie("AKlang",_obj_,7);
+  function changeLang(){
+    oldLang = getlang()
+    if(oldLang == "null"){
+      _changelang("en");
+    }else if(oldLang == "fr"){
+      _changelang("en");
+    }else if(oldLang == "en"){
+      _changelang("fr");
+    }
+  }
+  function _changelang(lang){
+    $("#langchanger_btn").html('Lang: '+lang);
+    setCookie("AKlang",lang,7);
   }
 //FUNCTION END
 
@@ -140,12 +149,11 @@ $(document).ready(function() {
 
 
   //Lang zone
-    $(".langchanger").on('click',function(e){
+    $("#langchanger_btn").on('mouseover',function(e){
       console.log("button");
-      $(this).closest('ul').hide();
-      setCookie('AKlang',$(this).data("lang"),7);
+      changeLang();
     });
 
  // translator.lang("en");//change to english
-  changelang(lang);
+  changeLang();
 });
