@@ -76,8 +76,8 @@
 
 //VARIABLE ZONE
   var lang="en";
-  var translatorhead = $('head').translate({lang: lang, t: dico});
-  var translator = $('body').translate({lang: lang, t: dico});
+  $('head').translate({lang: "en", t: dico});
+  $('body').translate({lang: "en", t: dico});
   var dico={
     Home:{
       en:"Home",
@@ -134,8 +134,8 @@
     console.log(lang);
     $("#langchanger_btn").html('Lang: '+lang);
     setCookie("AKlang",lang,7);
-    translatorhead.lang(lang);
-    translator.lang(lang);
+    $('head').translate({lang: lang, t: dico});
+    $('body').translate({lang: lang, t: dico});
   }
 //FUNCTION END
 
@@ -146,7 +146,7 @@ $(document).ready(function() {
       lang=getCookie("AKlang");
     }else{
       lang="fr";
-      setCookie("AKlang","fr",7);
+      setCookie("AKlang","en",7);
     }
 
 
