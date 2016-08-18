@@ -3,6 +3,11 @@
 //        Created by        //
 //         Akrimion         //
 //##########################//
+//Cookies: AKlang = lang
+//
+
+
+
 //TRADUCTION ZONE
   /**
   * @file jquery.translate.js
@@ -30,14 +35,14 @@
     };
     settings = $.extend(settings, options || {});
     if (settings.css.lastIndexOf(".", 0) !== 0)   //doesn't start with '.'
-      settings.css = "." + settings.css;     
+      settings.css = "." + settings.css;
     var t = settings.t;
     //public methods
     this.lang = function(l) {
       if (l) {
         settings.lang = l;
         this.translate(settings);  //translate everything
-      }    
+      }
       return settings.lang;
     };
     this.get = function(index) {
@@ -48,7 +53,7 @@
       catch (err) {
         //not found, return index
         return index;
-      }  
+      }
       if (res)
         return res;
       else
@@ -70,6 +75,8 @@
   })(jQuery);
 
 //VARIABLE ZONE
+  var translatorhead = $('head').translate({lang: "en", t: dico});
+  var translator = $('body').translate({lang: "en", t: dico});
   var lang="fr";
   var dico={
     Home:{
@@ -81,7 +88,7 @@
       fr:"AkriWeb - site officiel d'Akrimion"
     }
   };
-    
+
 
 
 //FUNCTION ZONE
@@ -106,20 +113,38 @@
     }
     return "";
 	}
-
-
+  function changelang(_obj_){
+    console.log(_obj_);
+    if(typeof _obj_ == "string"){
+      _changelang(_obj_);
+    }
+    else{
+      _changelang(_obj_.data('lang'));
+    }
+  }
+  function _changelang(string){
+    console.log(string);
+    $("#langchanger_btn").html('Lang: '+string);
+    translatorhead.lang(string);
+    translator.lang(string);
+    setCookie("AKlang",string,7);
+  }
 //FUNCTION END
 
 $(document).ready(function() {
+
   //Cookies Zone
-  if(getCookie("AKlang")!=""){
-    var lang=getCookie("AKlang");
-  }else{
-    var lang="fr";
-    setCookie("AKlang","fr",7);
-  }
-  var translatorhead = $('head').translate({lang: lang, t: dico});
-  var translator = $('body').translate({lang: lang, t: dico});
+    if(getCookie("AKlang")!=""){
+      lang=getCookie("AKlang");
+    }else{
+      lang="fr";
+      setCookie("AKlang","fr",7);
+    }
+
+
+  //Lang zone
+    $(".langchanger").on('click',changelang($(this)));
 
  // translator.lang("en");//change to english
+changelang(lang);
 });
