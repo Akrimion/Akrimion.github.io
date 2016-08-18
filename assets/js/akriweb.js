@@ -146,5 +146,5 @@ $(document).ready(function() {
     $(".langchanger").on('click',changelang($(this)));
 
  // translator.lang("en");//change to english
-changelang(lang);
+changelang("en");
 });
