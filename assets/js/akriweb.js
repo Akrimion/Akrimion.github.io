@@ -131,6 +131,7 @@ $(document).ready(function() {
 
   //Cookies Zone
     if(getCookie("AKlang")!=""){
+      console.log("testcookies")
       lang=getCookie("AKlang");
     }else{
       lang="fr";
