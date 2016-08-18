@@ -75,9 +75,9 @@
   })(jQuery);
 
 //VARIABLE ZONE
-  var translatorhead = $('head').translate({lang: getlang(), t: dico});
-  var translator = $('body').translate({lang: getlang(), t: dico});
-  var lang="fr";
+  var lang="en";
+  var translatorhead = $('head').translate({lang: lang, t: dico});
+  var translator = $('body').translate({lang: lang, t: dico});
   var dico={
     Home:{
       en:"Home",
