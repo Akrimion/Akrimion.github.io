@@ -119,7 +119,11 @@
       _changelang(_obj_);
     }
     else{
-      _changelang(_obj_.data('lang'));
+      if(_obj_.data('lang')){
+        _changelang(_obj_.data('lang'));
+      }else{
+        _changelang("en");
+      }
     }
   }
   function _changelang(string){
@@ -146,5 +150,5 @@ $(document).ready(function() {
     $(".langchanger").on('click',changelang($(this)));
 
  // translator.lang("en");//change to english
-changelang("en");
+  changelang("en");
 });
