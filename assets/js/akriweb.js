@@ -117,12 +117,12 @@
     if(getCookie("AKlang")!=""){
       return getCookie('AKlang');
     }else{
-      return "null";
+      return "";
     }
   }
   function changeLang(){
     oldLang = getlang()
-    if(oldLang == "null"){
+    if(oldLang == ""){
       _changelang("en");
     }else if(oldLang == "fr"){
       _changelang("en");
