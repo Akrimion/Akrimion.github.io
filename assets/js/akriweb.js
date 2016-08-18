@@ -75,8 +75,8 @@
   })(jQuery);
 
 //VARIABLE ZONE
-  var translatorhead = $('head').translate({lang: "en", t: dico});
-  var translator = $('body').translate({lang: "en", t: dico});
+  var translatorhead = $('head').translate({lang: getlang(), t: dico});
+  var translator = $('body').translate({lang: getlang(), t: dico});
   var lang="fr";
   var dico={
     Home:{
@@ -113,25 +113,17 @@
     }
     return "";
 	}
-  function changelang(_obj_){
-    console.log(_obj_);
-    if(typeof _obj_ == "string"){
-      _changelang(_obj_);
-    }
-    else{
-      if(_obj_.data('lang')){
-        _changelang(_obj_.data('lang'));
-      }else{
-        _changelang("en");
-      }
+  function getlang(){
+    if(getCookie("AKlang")!=""){
+      return getCookie('AKlang');
+    }else{
+      return "en";
     }
   }
-  function _changelang(string){
-    console.log(string);
-    $("#langchanger_btn").html('Lang: '+string);
-    translatorhead.lang(string);
-    translator.lang(string);
-    setCookie("AKlang",string,7);
+  function changelang(_obj_){
+    console.log(_obj_);
+    $("#langchanger_btn").html('Lang: '+_obj_);
+    setCookie("AKlang",_obj_,7);
   }
 //FUNCTION END
 
@@ -147,8 +139,8 @@ $(document).ready(function() {
 
 
   //Lang zone
-    $(".langchanger").on('click',changelang($(this)));
+    $(".langchanger").on('click',setCookie('AKlang',$(this).data("lang"),7));
 
  // translator.lang("en");//change to english
-  changelang("en");
+  changelang(lang);
 });
