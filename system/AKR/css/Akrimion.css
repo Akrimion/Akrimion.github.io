@@ -71,7 +71,134 @@ a:focus, a:hover {
   background-color: transparent;
 }
 
+/* Header */
+.masterhead {
+  display: table;
+  width: 100%;
+  height: auto;
+  padding: 200px 0;
+  text-align: center;
+  color: var(--akr-text);
+  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
+  background-color: var(--akr-dark);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.masterhead .intro-body {
+  display: table-cell;
+  vertical-align: middle;
+}
+.masterhead .intro-body .intro-heading {
+  font-size: 50px;
+}
+.masterhead .intro-body .intro-text {
+  font-size: 18px;
+}
+.btn-circle {
+  font-size: 26px;
+  width: 55px;
+  height: 55px;
+  margin-top: 15px;
+  line-height: 45px;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background 0.3s ease-in-out;
+  color: var(--akr-text);
+  border: 2px solid var(--akr-text);
+  border-radius: 100% !important;
+  background: transparent;
+}
+.btn-circle:focus, .btn-circle:hover {
+  color: var(--akr-text);
+  outline: none;
+  background: var(--akr-gris-transp-xl);
+}
 
+/* Section */
+.content-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.project-section {
+  color: var(--akr-text);
+  background: url("../img/project-bg.jpg") no-repeat center center scroll;
+  background-color: var(--akr-dark);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.rpgmaker-section {
+  color: var(--akr-text);
+  background: url("../img/rpgmaker-bg.jpg") no-repeat center center scroll;
+  background-color: var(--akr-dark);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+  /* button */
+.btn {
+  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0;
+}
+.btn-default {
+  color: var(--akr-link);
+  border: 1px solid var(--akr-link);
+  background-color: transparent;
+}
+.btn-default:focus, .btn-default:hover {
+  color: var(--akr-dark);
+  border: 1px solid var(--akr-link);
+  outline: none;
+  background-color: var(--akr-link);
+}
+
+
+ul.banner-social-buttons {
+  margin-top: 0;
+}
+
+
+
+::-moz-selection {
+  background: #fcfcfc;
+  background: var(--akr-gris-transp-l);
+  text-shadow: none;
+}
+
+::selection {
+  background: #fcfcfc;
+  background: var(--akr-gris-transp-l);
+  text-shadow: none;
+}
+
+img::selection {
+  background: transparent;
+}
+img::-moz-selection {
+  background: transparent;
+}
+
+
+
+/*Footer*/
+footer {
+  padding: 50px 0;
+}
+footer p {
+  font-size: 14px;
+  margin: 0;
+}
 
 /*Responsive Functions*/
 @media (min-width: 768px) {
@@ -107,14 +234,14 @@ a:focus, a:hover {
   }
 }
 @media (min-width: 768px) {
-  .masthead {
+  .masterhead {
     height: 100%;
     padding: 0;
   }
-  .masthead .intro-body .brand-heading {
+  .masterhead .intro-body .intro-heading {
     font-size: 100px;
   }
-  .masthead .intro-body .intro-text {
+  .masterhead .intro-body .intro-text {
     font-size: 22px;
   }
 }
@@ -138,129 +265,4 @@ a:focus, a:hover {
   ul.banner-social-buttons li:last-child {
     margin-bottom: 0;
   }
-}
-
-
-
-
-.masthead {
-  display: table;
-  width: 100%;
-  height: auto;
-  padding: 200px 0;
-  text-align: center;
-  color: var(--akr-text);
-  background: url("../img/intro-bg.jpg") no-repeat bottom center scroll;
-  background-color: var(--akr-dark);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.masthead .intro-body {
-  display: table-cell;
-  vertical-align: middle;
-}
-
-.masthead .intro-body .brand-heading {
-  font-size: 50px;
-}
-
-.masthead .intro-body .intro-text {
-  font-size: 18px;
-}
-
-
-
-.btn-circle {
-  font-size: 26px;
-  width: 55px;
-  height: 55px;
-  margin-top: 15px;
-  line-height: 45px;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background 0.3s ease-in-out;
-  color: var(--akr-text);
-  border: 2px solid var(--akr-text);
-  border-radius: 100% !important;
-  background: transparent;
-}
-
-.btn-circle:focus, .btn-circle:hover {
-  color: var(--akr-text);
-  outline: none;
-  background: var(--akr-gris-transp-xl);
-}
-
-.content-section {
-  padding-top: 150px;
-  padding-bottom: 150px;
-}
-
-.download-section {
-  color: var(--akr-text);
-  background: url("../img/downloads-bg.jpg") no-repeat center center scroll;
-  background-color: var(--akr-dark);
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
-
-.btn {
-  font-family: 'Cabin', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 400;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  text-transform: uppercase;
-  border-radius: 0;
-}
-
-.btn-default {
-  color: var(--akr-link);
-  border: 1px solid var(--akr-link);
-  background-color: transparent;
-}
-
-.btn-default:focus, .btn-default:hover {
-  color: var(--akr-dark);
-  border: 1px solid var(--akr-link);
-  outline: none;
-  background-color: var(--akr-link);
-}
-
-ul.banner-social-buttons {
-  margin-top: 0;
-}
-
-footer {
-  padding: 50px 0;
-}
-
-footer p {
-  font-size: 14px;
-  margin: 0;
-}
-
-::-moz-selection {
-  background: #fcfcfc;
-  background: var(--akr-gris-transp-l);
-  text-shadow: none;
-}
-
-::selection {
-  background: #fcfcfc;
-  background: var(--akr-gris-transp-l);
-  text-shadow: none;
-}
-
-img::selection {
-  background: transparent;
-}
-
-img::-moz-selection {
-  background: transparent;
 }

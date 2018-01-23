@@ -4,7 +4,9 @@
 
 	"title": "Akrimion site officiel",
 	"about": "&Agrave; propos",
-	"download":"Telecharger",
+	"project":"Projet",
+	"blender":"Blender",
+	"rpgmaker":"Rpg-maker",
 	"contact":"Contacter"
 
 }
