@@ -44,10 +44,6 @@
 })(jQuery); // End of use strict
 
 
-
-
-
-
 // function for traduction
 function Translate() {
   //initialization
@@ -72,6 +68,7 @@ function Translate() {
           var allDom = document.getElementsByTagName("*");
           for(var i =0; i < allDom.length; i++){
             var elem = allDom[i];
+            console.log(elem)
             var key = elem.getAttribute(_self.attribute);
             if(key != null) {
               console.log(key);
